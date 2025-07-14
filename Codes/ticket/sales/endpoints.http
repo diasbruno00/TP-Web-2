@@ -1,0 +1,81 @@
+### GET request to example server
+GET localhost:4000/event
+
+
+### POST request to example server
+POST localhost:4000/event
+Content-Type: application/json
+
+{
+  "description": "Especial de natal",
+  "type": 2,
+  "date": "2025/12/25",
+  "startSales": "20225/10/01",
+  "endSales": "2025/12/24",
+  "price": 30
+}
+
+### GET request to example server
+GET localhost:4000/event/e9d61365-4fe1-41d7-9efe-b62e50409ac0
+
+
+### PUT request to example server
+PUT localhost:4000/event
+Content-Type: application/json
+
+{
+    "id": "e9d61365-4fe1-41d7-9efe-b62e50409ac0",
+    "description": "Especial de natal",
+    "type": 0,
+    "date": "2025/12/25",
+    "startSales": "20225/10/01",
+    "endSales": "2025/12/25",
+    "price": 35.0
+}
+
+### DELETE request to example server
+DELETE localhost:4000/event
+Content-Type: application/json
+
+{
+  "id": "e9d61365-4fe1-41d7-9efe-b62e50409ac0"
+}
+
+### GET request to example server
+GET localhost:4000/sales
+###
+
+### POST request to example server
+POST localhost:4000/sales
+Content-Type: application/json
+
+{
+  "uuid": "8f9e7946-7783-4a74-af13-b75f5ab7ce25",
+  "user_id": "09f7140d-98a1-408c-bec9-90aa6693d892",
+  "event_id": "4ca2be00-e10c-4993-9f7d-c269d08151d6",
+  "purchaseDate": "2025/12/25",
+  "purchaseStatus": 0
+}
+
+### GET request to example server
+GET localhost:4000/sales/3d132881-9527-4a78-b0ad-713127e34d6b
+
+### PUT request to example server
+PUT localhost:4000/sales
+Content-Type: application/json
+
+{
+  "uuid": "3d132881-9527-4a78-b0ad-713127e34d6b",
+  "user_id": "09f7140d-98a1-408c-bec9-90aa6693d892",
+  "event_id": "4ca2be00-e10c-4993-9f7d-c269d08151d6",
+  "purchaseDate": "2026/12/25",
+  "purchaseStatus": 1
+}
+
+### DELETE request to example server
+DELETE localhost:4000/sales
+Content-Type: application/json
+
+{
+  "id": "3d132881-9527-4a78-b0ad-713127e34d6b"
+}
