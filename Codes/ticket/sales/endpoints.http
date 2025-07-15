@@ -16,6 +16,7 @@ Content-Type: application/json
 }
 
 ### GET request to example server
+## Necessario informar o UUID do evento valido
 GET localhost:4000/event/e9d61365-4fe1-41d7-9efe-b62e50409ac0
 
 
