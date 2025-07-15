@@ -12,7 +12,7 @@ Content-Type: application/json
   "date": "2025/12/25",
   "startSales": "20225/10/01",
   "endSales": "2025/12/24",
-  "price": 30
+  "price": 35
 }
 
 ### GET request to example server
@@ -20,6 +20,7 @@ GET localhost:4000/event/e9d61365-4fe1-41d7-9efe-b62e50409ac0
 
 
 ### PUT request to example server
+## Necessario informar o UUID do evento valido
 PUT localhost:4000/event
 Content-Type: application/json
 
@@ -34,11 +35,12 @@ Content-Type: application/json
 }
 
 ### DELETE request to example server
+## Necessario informar o UUID do evento valido
 DELETE localhost:4000/event
 Content-Type: application/json
 
 {
-  "id": "e9d61365-4fe1-41d7-9efe-b62e50409ac0"
+  "id": "f829b2d0-d3c6-4337-82ba-61507ad71376"
 }
 
 ### GET request to example server
@@ -50,32 +52,34 @@ POST localhost:4000/sales
 Content-Type: application/json
 
 {
-  "uuid": "8f9e7946-7783-4a74-af13-b75f5ab7ce25",
   "user_id": "09f7140d-98a1-408c-bec9-90aa6693d892",
   "event_id": "4ca2be00-e10c-4993-9f7d-c269d08151d6",
-  "purchaseDate": "2025/12/25",
+  "purchaseDate": "2025/12/29",
   "purchaseStatus": 0
 }
 
 ### GET request to example server
-GET localhost:4000/sales/3d132881-9527-4a78-b0ad-713127e34d6b
+## Necessario informar o UUID do evento valido
+GET localhost:4000/sales/46329220-2e5c-4b13-b9b4-f67acdce5215
 
 ### PUT request to example server
+## Necessario informar o UUID do evento valido
 PUT localhost:4000/sales
 Content-Type: application/json
 
 {
-  "uuid": "3d132881-9527-4a78-b0ad-713127e34d6b",
+  "uuid": "183715b7-b1c0-4863-abe8-2a9f03158557",
   "user_id": "09f7140d-98a1-408c-bec9-90aa6693d892",
   "event_id": "4ca2be00-e10c-4993-9f7d-c269d08151d6",
-  "purchaseDate": "2026/12/25",
-  "purchaseStatus": 1
+  "purchaseDate": "2026/12/30",
+  "purchaseStatus": 2
 }
 
 ### DELETE request to example server
 DELETE localhost:4000/sales
+## Necessario informar o UUID do evento valido
 Content-Type: application/json
 
 {
-  "id": "3d132881-9527-4a78-b0ad-713127e34d6b"
+  "id": "b0cf6835-9bc2-46df-9ed3-2286e0299156"
 }

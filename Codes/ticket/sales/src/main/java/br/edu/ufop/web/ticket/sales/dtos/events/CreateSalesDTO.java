@@ -15,7 +15,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateSalesDTO {
-    private UUID uuid;
+    private UUID id;
     private UUID user_id;
     private UUID event_id;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd", timezone = "America/Sao_Paulo")
