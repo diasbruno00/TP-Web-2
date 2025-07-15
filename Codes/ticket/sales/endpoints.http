@@ -60,11 +60,11 @@ Content-Type: application/json
 }
 
 ### GET request to example server
-## Necessario informar o UUID do evento valido
+## Necessario informar o UUID de sales valido
 GET localhost:4000/sales/46329220-2e5c-4b13-b9b4-f67acdce5215
 
 ### PUT request to example server
-## Necessario informar o UUID do evento valido
+## Necessario informar o UUID de sales valido
 PUT localhost:4000/sales
 Content-Type: application/json
 
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 ### DELETE request to example server
 DELETE localhost:4000/sales
-## Necessario informar o UUID do evento valido
+## Necessario informar o UUID de sales valido
 Content-Type: application/json
 
 {
